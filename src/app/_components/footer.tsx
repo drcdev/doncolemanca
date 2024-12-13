@@ -25,7 +25,7 @@ export function Footer() {
               </svg>
             </a>
             <a
-              href={`https://github.com/`}
+              href={`https://github.com/drcdev`}
               className="mx-3 font-bold hover:underline"
             >
               GitHub
