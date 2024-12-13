@@ -1,7 +1,7 @@
 import Avatar from "./avatar";
 import CoverImage from "./cover-image";
 import DateFormatter from "./date-formatter";
-import { PostTitle } from "@/app/_components/post-title";
+import { IdeaTitle } from "@/app/_components/idea-title";
 import { type Author } from "@/interfaces/author";
 
 type Props = {
@@ -11,10 +11,10 @@ type Props = {
   author: Author;
 };
 
-export function PostHeader({ title, coverImage, date, author }: Props) {
+export function IdeaHeader({ title, coverImage, date, author }: Props) {
   return (
     <>
-      <PostTitle>{title}</PostTitle>
+      <IdeaTitle>{title}</IdeaTitle>
       <div className="hidden md:block md:mb-12">
         <Avatar name={author.name} picture={author.picture} />
       </div>

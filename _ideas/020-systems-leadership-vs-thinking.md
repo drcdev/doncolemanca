@@ -1,12 +1,12 @@
 ---
 title: "Systems Leadership vs. Systems Thinking: Key Differences and Applications"
 excerpt: "Unpack the distinctions between systems leadership and systems thinking to better understand their roles in addressing complexity."
-coverImage: "/assets/blog/020-systems-leadership-vs-thinking/cover.webp"
+coverImage: "/assets/ideas/020-systems-leadership-vs-thinking/cover.webp"
 date: "2024-12-11"
 author:
   name: "Don Coleman"
-  picture: "/assets/blog/authors/don-coleman.jpeg"
-ogImage: "/assets/blog/020-systems-leadership-vs-thinking/cover.webp"
+  picture: "/assets/ideas/authors/don-coleman.jpeg"
+ogImage: "/assets/ideas/020-systems-leadership-vs-thinking/cover.webp"
 ---
 
 # Systems Leadership vs. Systems Thinking: Key Differences and Applications
