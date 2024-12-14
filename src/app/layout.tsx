@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import cn from "classnames";
 import { ThemeSwitcher } from "./_components/theme-switcher";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 import "./globals.css";
 
@@ -62,6 +63,7 @@ export default function RootLayout({
         className={cn(inter.className, "dark:bg-slate-900 dark:text-slate-400")}
       >
         <SpeedInsights />
+        <Analytics />
         <ThemeSwitcher />
         <div className="min-h-screen">{children}</div>
         <Footer />
