@@ -23,7 +23,9 @@ export default function Index() {
           slug={heroIdea.slug}
           excerpt={heroIdea.excerpt}
         />
-        {moreIdeas.length > 0 && <MoreIdeas ideas={moreIdeas} />}
+        {moreIdeas.length > 0 && (
+          <MoreIdeas ideas={moreIdeas} heroIdea={true} />
+        )}
       </Container>
     </main>
   );
