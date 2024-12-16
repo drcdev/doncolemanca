@@ -4,14 +4,14 @@
     "cpus": 2
   },
   "waitFor": "onCreateCommand",
-  "updateContentCommand": "npm install && npm run build",
-  "postCreateCommand": "",
+  "updateContentCommand": "npm install",
+  // "postCreateCommand": "",
   "postAttachCommand": {
     "server": "npm run dev"
   },
   "customizations": {
     "codespaces": {
-      "openFiles": ["pages/index.js"]
+      "openFiles": ["src/app/page.ts"]
     },
     "vscode": {
       "extensions": [
@@ -23,11 +23,11 @@
       ]
     }
   },
-  "portsAttributes": {
-    "3000": {
-      "label": "Application",
-      "onAutoForward": "openPreview"
-    }
-  },
+  // "portsAttributes": {
+  //   "3000": {
+  //     "label": "Application",
+  //     "onAutoForward": "openPreview"
+  //   }
+  // },
   "forwardPorts": [3000]
 }
