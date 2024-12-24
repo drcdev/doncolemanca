@@ -64,9 +64,10 @@ export default function RootLayout({
       >
         <SpeedInsights />
         <Analytics />
-        <ThemeSwitcher />
+
         <div className="min-h-screen">{children}</div>
         <Footer />
+        <ThemeSwitcher />
       </body>
     </html>
   );
