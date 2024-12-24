@@ -1,9 +1,9 @@
-import { Idea } from "@/interfaces/idea";
+import { Page } from "@/interfaces/page";
 import { IdeaPreview } from "./idea-preview";
 import Link from "next/link";
 
 type Props = {
-  ideas: Idea[];
+  ideas: Page[];
   heroIdea?: boolean | true;
 };
 

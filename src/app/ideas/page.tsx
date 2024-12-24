@@ -1,20 +1,20 @@
 import Container from "@/app/_components/container";
 import { HeroIdea } from "@/app/_components/hero-idea";
-import { Intro } from "@/app/_components/intro";
+import { PageTitle } from "@/app/_components/page-title";
 import { MoreIdeas } from "@/app/_components/more-ideas";
-import { getAllIdeas } from "@/lib/api";
+import { getAll } from "@/lib/api";
+import { IDEAS_DIRECTORY } from "@/lib/constants";
+import { Metadata } from "next";
 
 export default function Index() {
-  const allIdeas = getAllIdeas();
-
+  const allIdeas = getAll(IDEAS_DIRECTORY).filter((idea) => !idea.preview);
   const heroIdea = allIdeas[0];
-
   const moreIdeas = allIdeas.slice(1);
 
   return (
     <main>
       <Container>
-        <Intro title="Ideas" />
+        <PageTitle>Ideas</PageTitle>
         <HeroIdea
           title={heroIdea.title}
           coverImage={heroIdea.coverImage}
@@ -29,4 +29,16 @@ export default function Index() {
       </Container>
     </main>
   );
+}
+
+export async function generateMetadata(): Promise<Metadata> {
+  const title = "Ideas | Don Coleman";
+
+  return {
+    title,
+    openGraph: {
+      title,
+      images: ["/assets/ideas/cover.webp"],
+    },
+  };
 }
