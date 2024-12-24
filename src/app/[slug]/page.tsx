@@ -7,29 +7,29 @@ import Container from "@/app/_components/container";
 import Header from "@/app/_components/header";
 import { IdeaBody } from "@/app/_components/idea-body";
 import { IdeaHeader } from "@/app/_components/idea-header";
-import { IDEAS_DIRECTORY } from "@/lib/constants";
+import { PAGES_DIRECTORY } from "@/lib/constants";
 
 export default async function Idea(props: Params) {
   const params = await props.params;
-  const idea = getBySlug(IDEAS_DIRECTORY, params.slug);
+  const page = getBySlug(PAGES_DIRECTORY, params.slug);
 
-  if (!idea) {
+  if (!page) {
     return notFound();
   }
 
-  const content = await markdownToHtml(idea.content || "");
+  const content = await markdownToHtml(page.content || "");
 
   return (
     <main>
-      <Alert preview={idea.preview} />
+      <Alert preview={page.preview} />
       <Container>
         <Header title="Ideas" href="/ideas" />
         <article className="mb-32">
           <IdeaHeader
-            title={idea.title}
-            coverImage={idea.coverImage}
-            date={idea.date}
-            author={idea.author}
+            title={page.title}
+            coverImage={page.coverImage}
+            date={page.date}
+            author={page.author}
           />
           <IdeaBody content={content} />
         </article>
@@ -46,27 +46,27 @@ type Params = {
 
 export async function generateMetadata(props: Params): Promise<Metadata> {
   const params = await props.params;
-  const idea = getBySlug(IDEAS_DIRECTORY, params.slug);
+  const page = getBySlug(PAGES_DIRECTORY, params.slug);
 
-  if (!idea) {
+  if (!page) {
     return notFound();
   }
 
-  const title = `${idea.title} | Don Coleman`;
+  const title = `${page.title} | Don Coleman`;
 
   return {
     title,
     openGraph: {
       title,
-      images: [idea.ogImage.url],
+      images: [page.ogImage.url],
     },
   };
 }
 
 export async function generateStaticParams() {
-  const ideas = getAll(IDEAS_DIRECTORY);
+  const pages = getAll(PAGES_DIRECTORY);
 
-  return ideas.map((idea) => ({
-    slug: idea.slug,
+  return pages.map((page) => ({
+    slug: page.slug,
   }));
 }

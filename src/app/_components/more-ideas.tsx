@@ -1,4 +1,4 @@
-import { Idea } from "@/interfaces/idea";
+import { Idea } from "@/interfaces/page";
 import { IdeaPreview } from "./idea-preview";
 import Link from "next/link";
 

@@ -2,10 +2,11 @@ import Container from "@/app/_components/container";
 import { HeroIdea } from "@/app/_components/hero-idea";
 import { Intro } from "@/app/_components/intro";
 import { MoreIdeas } from "@/app/_components/more-ideas";
-import { getAllIdeas } from "@/lib/api";
+import { getAll } from "@/lib/api";
+import { IDEAS_DIRECTORY } from "@/lib/constants";
 
 export default function Index() {
-  const allIdeas = getAllIdeas();
+  const allIdeas = getAll(IDEAS_DIRECTORY);
 
   const heroIdea = allIdeas[0];
 
