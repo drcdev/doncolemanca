@@ -23,6 +23,7 @@ export default async function Page(props: Params) {
     <main>
       <Alert preview={page.preview} />
       <Container>
+        <Header title="Don Coleman" href="/" />{" "}
         <article className="mb-32">
           <PageHeader title={page.title} coverImage={page.coverImage} />
           <PageBody content={content} />
