@@ -1,5 +1,5 @@
 import Container from "@/app/_components/container";
-import { Intro } from "@/app/_components/intro";
+import { PageTitle } from "@/app/_components/page-title";
 import { MoreIdeas } from "@/app/_components/more-ideas";
 import { getAll } from "@/lib/api";
 import { IDEAS_DIRECTORY } from "@/lib/constants";
@@ -10,7 +10,7 @@ export default function Index() {
   return (
     <main>
       <Container>
-        <Intro />
+        <PageTitle />
         {allIdeas.length > 0 && <MoreIdeas ideas={allIdeas} heroIdea={false} />}
       </Container>
     </main>

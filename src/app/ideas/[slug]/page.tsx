@@ -4,10 +4,10 @@ import { getAll, getBySlug } from "@/lib/api";
 import markdownToHtml from "@/lib/markdownToHtml";
 import Alert from "@/app/_components/alert";
 import Container from "@/app/_components/container";
-import Header from "@/app/_components/header";
 import { IdeaBody } from "@/app/_components/idea-body";
 import { IdeaHeader } from "@/app/_components/idea-header";
 import { IDEAS_DIRECTORY } from "@/lib/constants";
+import { PageTitleSmall } from "@/app/_components/page-title-small";
 
 export default async function Idea(props: Params) {
   const params = await props.params;
@@ -23,7 +23,7 @@ export default async function Idea(props: Params) {
     <main>
       <Alert preview={idea.preview} />
       <Container>
-        <Header title="Ideas" href="/ideas" />
+        <PageTitleSmall>Ideas</PageTitleSmall>
         <article className="mb-32">
           <IdeaHeader
             title={idea.title}

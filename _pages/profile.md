@@ -1,5 +1,5 @@
 ---
-title: "About Don"
+title: "Profile"
 excerpt: "Don Coleman is a cloud architect and strategic leader, driving innovation and impactful change in healthcare and technology through mentorship, transformative solutions, and a passion for community empowerment."
 coverImage: "/assets/ideas/010-understanding-systems-leadership/cover.webp"
 date: "2024-12-11"

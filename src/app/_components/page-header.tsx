@@ -1,5 +1,5 @@
 import CoverImage from "./cover-image";
-import { PageTitle } from "@/app/_components/page-title";
+import { PageTitle } from "./page-title";
 
 type Props = {
   title: string;

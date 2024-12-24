@@ -1,10 +1,9 @@
 import Container from "@/app/_components/container";
 import { HeroIdea } from "@/app/_components/hero-idea";
-import { Intro } from "@/app/_components/intro";
+import { PageTitle } from "@/app/_components/page-title";
 import { MoreIdeas } from "@/app/_components/more-ideas";
 import { getAll } from "@/lib/api";
 import { IDEAS_DIRECTORY } from "@/lib/constants";
-import Header from "@/app/_components/header";
 
 export default function Index() {
   const allIdeas = getAll(IDEAS_DIRECTORY);
@@ -16,8 +15,7 @@ export default function Index() {
   return (
     <main>
       <Container>
-        <Header title="Don Coleman" href="/" />
-        <Intro title="Ideas" />
+        <PageTitle>Ideas</PageTitle>
         <HeroIdea
           title={heroIdea.title}
           coverImage={heroIdea.coverImage}

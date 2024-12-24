@@ -4,7 +4,6 @@ import { getAll, getBySlug } from "@/lib/api";
 import markdownToHtml from "@/lib/markdownToHtml";
 import Alert from "@/app/_components/alert";
 import Container from "@/app/_components/container";
-import Header from "@/app/_components/header";
 import { PageBody } from "@/app/_components/page-body";
 import { PageHeader } from "@/app/_components/page-header";
 import { PAGES_DIRECTORY } from "@/lib/constants";
@@ -23,7 +22,6 @@ export default async function Page(props: Params) {
     <main>
       <Alert preview={page.preview} />
       <Container>
-        <Header title="Don Coleman" href="/" />{" "}
         <article className="mb-32">
           <PageHeader title={page.title} coverImage={page.coverImage} />
           <PageBody content={content} />
