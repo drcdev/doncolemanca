@@ -3,6 +3,7 @@ import { PageTitle } from "@/app/_components/page-title";
 import { MoreIdeas } from "@/app/_components/more-ideas";
 import { getAll } from "@/lib/api";
 import { IDEAS_DIRECTORY } from "@/lib/constants";
+import { Metadata } from "next";
 
 export default function Index() {
   const allIdeas = getAll(IDEAS_DIRECTORY);
@@ -15,4 +16,16 @@ export default function Index() {
       </Container>
     </main>
   );
+}
+
+export async function generateMetadata(): Promise<Metadata> {
+  const title = "Ideas | Don Coleman";
+
+  return {
+    title,
+    openGraph: {
+      title,
+      images: ["/assets/cover.webp"],
+    },
+  };
 }
