@@ -5,11 +5,11 @@ import markdownToHtml from "@/lib/markdownToHtml";
 import Alert from "@/app/_components/alert";
 import Container from "@/app/_components/container";
 import Header from "@/app/_components/header";
-import { IdeaBody } from "@/app/_components/idea-body";
-import { IdeaHeader } from "@/app/_components/idea-header";
+import { PageBody } from "@/app/_components/page-body";
+import { PageHeader } from "@/app/_components/page-header";
 import { PAGES_DIRECTORY } from "@/lib/constants";
 
-export default async function Idea(props: Params) {
+export default async function Page(props: Params) {
   const params = await props.params;
   const page = getBySlug(PAGES_DIRECTORY, params.slug);
 
@@ -23,15 +23,9 @@ export default async function Idea(props: Params) {
     <main>
       <Alert preview={page.preview} />
       <Container>
-        <Header title="Ideas" href="/ideas" />
         <article className="mb-32">
-          <IdeaHeader
-            title={page.title}
-            coverImage={page.coverImage}
-            date={page.date}
-            author={page.author}
-          />
-          <IdeaBody content={content} />
+          <PageHeader title={page.title} coverImage={page.coverImage} />
+          <PageBody content={content} />
         </article>
       </Container>
     </main>

@@ -3,7 +3,7 @@ import { HOME_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import cn from "classnames";
-import { ThemeSwitcher } from "./_components/theme-switcher";
+import { ThemeSwitcher } from "@/app/_components/theme-switcher";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 
@@ -64,7 +64,6 @@ export default function RootLayout({
       >
         <SpeedInsights />
         <Analytics />
-
         <div className="min-h-screen">{children}</div>
         <Footer />
         <ThemeSwitcher />

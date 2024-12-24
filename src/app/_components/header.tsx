@@ -8,7 +8,7 @@ type Props = {
 
 const Header = ({ title, href }: Props) => {
   return (
-    <h2 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8 flex items-center">
+    <h2 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-10 mt-8 flex items-center">
       <Link href={href ?? "/"} className="hover:underline">
         {title ? title : SLOGAN}
       </Link>

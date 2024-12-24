@@ -4,6 +4,7 @@ import { Intro } from "@/app/_components/intro";
 import { MoreIdeas } from "@/app/_components/more-ideas";
 import { getAll } from "@/lib/api";
 import { IDEAS_DIRECTORY } from "@/lib/constants";
+import Header from "@/app/_components/header";
 
 export default function Index() {
   const allIdeas = getAll(IDEAS_DIRECTORY);
@@ -15,6 +16,7 @@ export default function Index() {
   return (
     <main>
       <Container>
+        <Header title="Don Coleman" href="/" />
         <Intro title="Ideas" />
         <HeroIdea
           title={heroIdea.title}
