@@ -6,7 +6,7 @@ import { IDEAS_DIRECTORY } from "@/lib/constants";
 import { Metadata } from "next";
 
 export default function Index() {
-  const allIdeas = getAll(IDEAS_DIRECTORY);
+  const allIdeas = getAll(IDEAS_DIRECTORY).filter((idea) => !idea.preview);
 
   return (
     <main>
