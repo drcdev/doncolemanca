@@ -1,17 +1,17 @@
 ---
 title: "Profile"
 excerpt: "Don Coleman is a cloud architect and strategic leader, driving innovation and impactful change in healthcare and technology through mentorship, transformative solutions, and a passion for community empowerment."
-coverImage: "/assets/ideas/010-understanding-systems-leadership/cover.webp"
+coverImage: "/assets/profile/cover.png"
 date: "2024-12-11"
 author:
   name: "Don Coleman"
   picture: "/assets/ideas/authors/don-coleman.jpeg"
-ogImage: "/assets/ideas/010-understanding-systems-leadership/cover.webp"
+ogImage: "/assets/profile/cover.png"
 ---
 
 # Introduction
 
-Welcome! My name is **Don Coleman**, and I am a cloud architect, strategist, and leader with a passion for empowering people, driving innovation, and solving complex problems. My career spans over a decade, during which I’ve contributed to transformative projects in healthcare, technology, and beyond. I invite you to learn more about my journey, values, and expertise.
+Welcome! My name is **Don Coleman**, and I am a cloud architect, strategist, and leader with a passion for empowering people, driving innovation, and tackling complex problems. My career spans over a decade, during which I’ve contributed to transformative projects in healthcare, technology, and beyond. I invite you to learn more about my journey, values, and expertise.
 
 ---
 

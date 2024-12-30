@@ -1,12 +1,12 @@
 ---
 title: "Understanding Systems Leadership: A New Paradigm for Change"
 excerpt: "Explore the core principles of systems leadership and how it empowers organizations to navigate complexity and drive transformative change."
-coverImage: "/assets/ideas/010-understanding-systems-leadership/cover.webp"
+coverImage: "/assets/ideas/010-understanding-systems-leadership/cover.png"
 date: "2024-12-11"
 author:
   name: "Don Coleman"
   picture: "/assets/ideas/authors/don-coleman.jpeg"
-ogImage: "/assets/ideas/010-understanding-systems-leadership/cover.webp"
+ogImage: "/assets/ideas/010-understanding-systems-leadership/cover.png"
 ---
 
 # Understanding Systems Leadership: A New Paradigm for Change
